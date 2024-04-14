@@ -32,7 +32,7 @@ class Like(Base):
     description = Column (String (500),nullable=False)
 
 class Follower (Base):
-    __tablename__='followers'
+    __tablename__= 'followers'
     id = Column(Integer, primary_key=True)
     user_id = Column (Integer, ForeignKey('users.id'),nullable=False)
     user_follower = Column (Integer, ForeignKey('users.id'),nullable=False)
